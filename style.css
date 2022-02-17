@@ -19,8 +19,15 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.news {
-    background-color: aliceblue;
+.h2::before {
+content: "New ";
+font-style: italic;
+font-size: small;
+color: red;
+}
+
+.news article:nth-child(even) {
+    background-color: rgb(163, 255, 255);
     padding: 50px 0 32px;
 }
 
